@@ -4,13 +4,13 @@ export function Contact(props) {
             <h1>Contact Info</h1>
             {props.students.map((student) => (
                 <div key={student.id}>
-                    <h2>{student.first_name} {student.last_name}</h2>
-                    <p>{student.email}</p>
-                    <p>{student.phone}</p>
-                    <p>{student.short_bio}</p>
+                    <h2>Name: {student.first_name} {student.last_name}</h2>
+                    <p>Email: {student.email}</p>
+                    <p>Phone: {student.phone}</p>
+                    <p>Bio: {student.short_bio}</p>
                     <img src={student.photo} />
                 </div>
             ))}
         </div>
-    )
+    );
 }

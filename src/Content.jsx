@@ -43,6 +43,7 @@ export function Content() {
     <div>
       <ResumesIndex students={students} />
       <ExperiencesIndex experiences={experiences} />
+      {/* <Contact contacts={contacts}/> */}
       <Modal show={false}>
         <p>Test</p>
       </Modal>
