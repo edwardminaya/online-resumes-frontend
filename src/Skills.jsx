@@ -5,7 +5,7 @@ export function Skills() {
 
   return (
     <div>
-      <h2>Skills</h2>
+      <h1>Skills</h1>
       <form onSubmit={handleSubmit}>
         {/* hardcoding data for now, needs to link to database though */}
         <div>Ruby, HTML, JavaScript, React, CSS</div>

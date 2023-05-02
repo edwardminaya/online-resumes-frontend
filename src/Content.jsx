@@ -7,7 +7,7 @@ export function Content() {
   const students = [
     { id: 1, first_name: "First", last_name: "Last", photo: 150, bio: 150 },
     { id: 2, first_name: "First", last_name: "Last", photo: 150, bio: 150 },
-    { id: 3, first_name: "First", last_name: "Last", photo: 150, bio: 150 }
+    { id: 3, first_name: "First", last_name: "Last", photo: 150, bio: 150 },
     { id: 1, first_name: "John", last_name: "Doe", short_bio: "John Doe's short bio", photo: "image_url" },
     { id: 2, first_name: "Jane", last_name: "Doe", short_bio: "Jane Doe's short bio", photo: "image_url" },
     { id: 3, first_name: "Joe", last_name: "Doe", short_bio: "Joe Doe's short bio", photo: "image_url" },
@@ -40,7 +40,7 @@ export function Content() {
       details: "No one cares",
     },
   ];
- 
+
   return (
     <div>
       <ResumesIndex students={students} />
