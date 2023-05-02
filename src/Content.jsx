@@ -92,8 +92,15 @@ export function Content() {
       <Skills />
       <Capstone capstones={capstones} />
       <ExperiencesIndex experiences={experiences} />
+
       <Contact students={students} />
+
+      {/* <Contact contacts={contacts}/> */}
+      <Modal show={false}>
+        <p>Test</p>
+      </Modal>
       {/* <Education schools={schools} /> */}
+
     </div>
   );
 }
