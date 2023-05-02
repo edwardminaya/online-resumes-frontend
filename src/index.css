@@ -1,3 +1,14 @@
 html {
   scroll-behavior: smooth;
+  padding: 10px;
+}
+
+img {
+  max-width: 150px;
+  max-height: auto;
+  margin: 4px;
+}
+
+h1, h2, h3, p {
+  font-family: 'Courier New', Courier, monospace;
 }
