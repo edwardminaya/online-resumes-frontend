@@ -4,6 +4,7 @@ import { Skills } from "./Skills";
 import { Modal } from "./Modal";
 import { Contact } from "./Contact";
 import { Capstone } from "./Capstone";
+// import { Education } from "./Education";
 
 export function Content() {
   // Attributes of the Student Model API
@@ -62,6 +63,33 @@ export function Content() {
     },
   ];
 
+  // const schools = [
+  //   {
+  //     id: 1,
+  //     school_name: "Syracuse",
+  //     degree_type: "MA",
+  //     start_date: "07-03-2009",
+  //     end_date: "05-15-2010",
+  //     details: "TV, Radio, Film",
+  //   },
+  //   {
+  //     id: 2,
+  //     school_name: "Oberlin",
+  //     degree_type: "BA",
+  //     start_date: "09-04-2001",
+  //     end_date: "05-30-2005",
+  //     details: "Liberal Arts",
+  //   },
+  //   {
+  //     id: 3,
+  //     school_name: "Actualize",
+  //     degree_type: "Certificate",
+  //     start_date: "01-15-2023",
+  //     end_date: "05-19-2023",
+  //     details: "This",
+  //   },
+  // ];
+
   return (
     <div>
       <ResumesIndex students={students} />
@@ -73,6 +101,7 @@ export function Content() {
       <Modal show={false}>
         <p>Test</p>
       </Modal>
+      {/* <Education schools={schools} /> */}
     </div>
   );
 }
