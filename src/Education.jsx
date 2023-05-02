@@ -1,11 +1,16 @@
-export function Education() {
+export function Education(props) {
   return (
     <div>
-      <h1>Education</h1>
-      <h2>Grad School</h2>
-      <h2>Undergrad</h2>
-      <h2>High School</h2>
-      <h2>Certificates</h2>
+      <h2>Education</h2>
+      {props.schools.map((school) => (
+        <div key={school.id}>
+          <h3>{school.school_name}</h3>
+          <p>
+            Attended: {school.start_date} — {school.end_date}
+          </p>
+          <p>Description: {school.details}</p>
+        </div>
+      ))}
     </div>
   );
 }
