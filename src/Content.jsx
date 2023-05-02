@@ -1,5 +1,6 @@
 import { ExperiencesIndex } from "./ExperiencesIndex";
 import { ResumesIndex } from "./ResumesIndex";
+import { Skills } from "./Skills";
 import { Capstone } from "./Capstone";
 
 export function Content() {
@@ -58,6 +59,8 @@ export function Content() {
   return (
     <div>
       <ResumesIndex students={students} />
+
+      <Skills />
       <Capstone capstones={capstones} />
       <ExperiencesIndex experiences={experiences} />
     </div>
