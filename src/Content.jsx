@@ -1,4 +1,5 @@
 import { ResumesIndex } from "./ResumesIndex";
+import { Capstone } from "./Capstone";
 
 export function Content() {
   const students = [
@@ -10,6 +11,7 @@ export function Content() {
   return (
     <div>
       <ResumesIndex students={students} />
+      <Capstone />
     </div>
   );
 }
