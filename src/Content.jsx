@@ -1,7 +1,6 @@
 import { ExperiencesIndex } from "./ExperiencesIndex";
 import { ResumesIndex } from "./ResumesIndex";
 import { Skills } from "./Skills";
-import { Modal } from "./Modal";
 import { Contact } from "./Contact";
 import { Capstone } from "./Capstone";
 // import { Education } from "./Education";
@@ -93,11 +92,15 @@ export function Content() {
       <Skills />
       <Capstone capstones={capstones} />
       <ExperiencesIndex experiences={experiences} />
+
+      <Contact students={students} />
+
       {/* <Contact contacts={contacts}/> */}
       <Modal show={false}>
         <p>Test</p>
       </Modal>
       {/* <Education schools={schools} /> */}
+
     </div>
   );
 }
