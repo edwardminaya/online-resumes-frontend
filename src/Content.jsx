@@ -1,7 +1,6 @@
 import { ExperiencesIndex } from "./ExperiencesIndex";
 import { ResumesIndex } from "./ResumesIndex";
 import { Skills } from "./Skills";
-import { Modal } from "./Modal";
 import { Contact } from "./Contact";
 
 export function Content() {
@@ -50,9 +49,6 @@ export function Content() {
       <Skills />
       <ExperiencesIndex experiences={experiences} />
       {/* <Contact contacts={contacts}/> */}
-      <Modal show={false}>
-        <p>Test</p>
-      </Modal>
     </div>
   );
 }
