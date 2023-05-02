@@ -1,4 +1,6 @@
 import { ResumesIndex } from "./ResumesIndex";
+import { Modal } from "./Modal";
+import { Contact } from "./Contact";
 
 export function Content() {
   const students = [
@@ -10,6 +12,9 @@ export function Content() {
   return (
     <div>
       <ResumesIndex students={students} />
+      <Modal show={false}>
+        <p>Test</p>
+      </Modal>
     </div>
   );
 }
