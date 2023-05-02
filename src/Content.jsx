@@ -1,7 +1,6 @@
 import { ExperiencesIndex } from "./ExperiencesIndex";
 import { ResumesIndex } from "./ResumesIndex";
 import { Skills } from "./Skills";
-import { Modal } from "./Modal";
 import { Contact } from "./Contact";
 import { Capstone } from "./Capstone";
 // import { Education } from "./Education";
@@ -89,15 +88,12 @@ export function Content() {
   return (
     <div>
       <ResumesIndex students={students} />
-
       <Skills />
       <Capstone capstones={capstones} />
       <ExperiencesIndex experiences={experiences} />
-      {/* <Contact contacts={contacts}/> */}
-      <Modal show={false}>
-        <p>Test</p>
-      </Modal>
+      <Contact students={students} />
       {/* <Education schools={schools} /> */}
+
     </div>
   );
 }
