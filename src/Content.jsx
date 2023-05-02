@@ -48,7 +48,7 @@ export function Content() {
 
       <Skills />
       <ExperiencesIndex experiences={experiences} />
-      {/* <Contact contacts={contacts}/> */}
+      <Contact students={students} />
     </div>
   );
 }
