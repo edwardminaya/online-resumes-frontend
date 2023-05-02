@@ -92,17 +92,10 @@ export function Content() {
   return (
     <div>
       <ResumesIndex students={students} />
-
       <Skills />
       <Capstone capstones={capstones} />
       <ExperiencesIndex experiences={experiences} />
-
       <Contact students={students} />
-
-      {/* <Contact contacts={contacts}/> */}
-      <Modal show={false}>
-        <p>Test</p>
-      </Modal>
       {/* <Education schools={schools} /> */}
 
     </div>
