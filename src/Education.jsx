@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
 export function Education(props) {
+  console.log(props);
   return (
     <div>
       <h2>Education</h2>
       {props.educations.map((education) => (
         <div key={education.id} className="card">
-          <ul class="list-group list-group-flush">
+          <ul className="list-group list-group-flush">
             <li>
               <h3>{education.university_name}</h3>
             </li>
