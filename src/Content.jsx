@@ -4,9 +4,15 @@ import { Skills } from "./Skills";
 import { Contact } from "./Contact";
 import { Capstone } from "./Capstone";
 import { Education } from "./Education";
+import { useState } from "react";
+import { Modal } from "./Modal";
+import { ResumesShow } from "./ResumesShow";
 
 export function Content() {
   // Attributes of the Student Model API
+  const [isResumesShowVisible, setIsResumesShowVisible] = useState(false);
+  const [currentResume, setCurrentResume] = useState({});
+
   const students = [
     { id: 1, first_name: "John", last_name: "Doe", short_bio: "John Doe's short bio", photo: "image_url" },
     { id: 2, first_name: "Jane", last_name: "Doe", short_bio: "Jane Doe's short bio", photo: "image_url" },
@@ -88,14 +94,27 @@ export function Content() {
     },
   ];
 
+  const handleShowResume = (resume) => {
+    setIsResumesShowVisible(true);
+    setCurrentResume(resume);
+  };
+
+  const handleClose = () => {
+    setIsResumesShowVisible(false);
+  };
+
   return (
     <div>
-      <ResumesIndex students={students} />
+      <ResumesIndex students={students} onShowResume={handleShowResume} />
       <Skills />
       <Capstone capstones={capstones} />
       <ExperiencesIndex experiences={experiences} />
       <Contact students={students} />
       <Education educations={educations} />
+
+      <Modal show={isResumesShowVisible} onClose={handleClose}>
+        <ResumesShow resume={currentResume} />
+      </Modal>
     </div>
   );
 }
