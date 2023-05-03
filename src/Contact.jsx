@@ -6,11 +6,12 @@ export function Contact(props) {
                 <div key={student.id}>
                     <h2>Name: {student.first_name} {student.last_name}</h2>
                     <p>Email: {student.email}</p>
-                    <p>Phone: {student.phone}</p>
+                    <p>Phone: {student.phone_number}</p>
                     <p>Bio: {student.short_bio}</p>
-                    <img src={student.photo} />
+                    <img src={student.image_url} />
                 </div>
             ))}
         </div>
     );
 }
+
