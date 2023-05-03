@@ -20,24 +20,27 @@ export function Content() {
       start_date: "04-20-2020",
       end_date: "04-20-2022",
       job_title: "General Manager",
-      company: "General Company",
+      company_name: "General Company",
       details: "managed general stuff",
+      user_id: 1,
     },
     {
       id: 2,
       start_date: "04-20-2020",
       end_date: "04-20-2022",
       job_title: "Assistant to the General Manager",
-      company: "General Company",
+      company_name: "General Company",
       details: "assist in general stuff",
+      user_id: 2,
     },
     {
       id: 3,
       start_date: "04-20-2020",
       end_date: "04-20-2022",
       job_title: "Human Resource Manager",
-      company: "General Company",
+      company_name: "General Company",
       details: "No one cares",
+      user_id: 3,
     },
   ];
 
@@ -93,7 +96,6 @@ export function Content() {
       <ExperiencesIndex experiences={experiences} />
       <Contact students={students} />
       {/* <Education schools={schools} /> */}
-
     </div>
   );
 }
