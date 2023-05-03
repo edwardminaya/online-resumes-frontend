@@ -1,4 +1,6 @@
+/* eslint-disable react/prop-types */
 export function ResumesIndex(props) {
+  console.log(props);
   return (
     <div>
       <h1>All resumes</h1>
@@ -12,6 +14,7 @@ export function ResumesIndex(props) {
             </a>
           </h2>
           <p>Short Bio: {student.short_bio}</p>
+          <button onClick={() => props.onShowResume(student)}>More Info</button>
         </div>
       ))}
     </div>
