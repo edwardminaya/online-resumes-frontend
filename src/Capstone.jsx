@@ -6,7 +6,7 @@ export function Capstone(props) {
         <div key={capstone.id}>
           <h3>
             <a href={capstone.url} target="_blank" rel="noreferrer">
-              {capstone.project_name}
+              {capstone.name}
             </a>
             <img src={capstone.screenshot} width="300px" />
           </h3>
