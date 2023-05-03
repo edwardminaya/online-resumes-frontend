@@ -1,3 +1,31 @@
 html {
   scroll-behavior: smooth;
+  padding: 10px;
+  background-color: wheat;
+}
+
+div {
+  background-color: wheat;
+}
+
+img {
+  max-width: 150px;
+  max-height: 150px;
+  margin: 4px;
+  border-radius: 20px;
+}
+
+p, h2, h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+  background-color: #cecee2;
+  border-radius: 6px;
+}
+
+div .card {
+  margin-bottom: 10px;
+  margin-left: 6px;
+  border-radius: 10px;
 }
