@@ -7,7 +7,7 @@ export function Capstone(props) {
       {props.students.map((student) => (
         <div key={student.id} className="card">
           {student.capstones.map((capstone) => (
-            <div>
+            <div key={capstone.id}>
               <h3>
                 <img src={capstone.screenshot} />
                 <a href={capstone.url} target="_blank" rel="noreferrer">
