@@ -13,8 +13,14 @@ export function ResumesShow(props) {
         </div>
       ))}
       {props.resume.capstones.map((capstone) => (
-        <div key={capstone.id}>
-          <p>{capstone.name}</p>
+        <div key={capstone.id} className="card">
+          <h3>
+            <img src={capstone.screenshot} />
+            <a href={capstone.url} target="_blank" rel="noreferrer">
+              {capstone.name}
+            </a>
+          </h3>
+          <p>{capstone.description}</p>
         </div>
       ))}
       {props.resume.educations.map((education) => (
