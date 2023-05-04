@@ -8,7 +8,7 @@ export function Modal(props) {
         <section className="modal-main">
           {props.children}
           <button className="close" type="button" onClick={props.onClose}>
-            Close
+            &#9447;
           </button>
         </section>
       </div>

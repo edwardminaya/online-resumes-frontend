@@ -13,13 +13,29 @@ export function ResumesShow(props) {
         </div>
       ))}
       {props.resume.capstones.map((capstone) => (
-        <div key={capstone.id}>
-          <p>{capstone.name}</p>
+        <div key={capstone.id} className="card">
+          <h3>
+            <img src={capstone.screenshot} />
+            <a href={capstone.url} target="_blank" rel="noreferrer">
+              {capstone.name}
+            </a>
+          </h3>
+          <p>{capstone.description}</p>
         </div>
       ))}
       {props.resume.educations.map((education) => (
-        <div key={education.id}>
-          <p>{education.degree}</p>
+        <div key={education.id} className="card">
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item">
+              <h3>{education.university_name}</h3>
+            </li>
+            <li className="list-group-item">
+              <strong>Attended:</strong> {education.start_date} — {education.end_date}
+            </li>
+            <li className="list-group-item">
+              <strong>Description:</strong> {education.details}
+            </li>
+          </ul>
         </div>
       ))}
       {props.resume.skills.map((skill) => (
