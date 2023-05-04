@@ -13,6 +13,7 @@ export function ExperiencesIndex(props) {
               <h4>
                 {experience.start_date} - {experience.end_date}
               </h4>
+              <div></div>
               <p>{experience.details}</p>
             </div>
           ))}
