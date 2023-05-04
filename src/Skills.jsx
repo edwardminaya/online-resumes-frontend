@@ -5,12 +5,11 @@ export function Skills(props) {
       <h2>Skills</h2>
       {props.students.map((student) => (
         <div key={student.id} className="card">
-          <li>
-            <h2>{student.skills.name}</h2>
-          </li>
+          {student.skills.map((skill) => (
+            <p>{skill.name}</p>
+          ))}
         </div>
       ))}
-      ;
     </div>
   );
 }
