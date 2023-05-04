@@ -14,27 +14,17 @@ export function ResumesShow(props) {
       ))}
       {props.resume.capstones.map((capstone) => (
         <div key={capstone.id}>
-          <p>{capstone.job_title}</p>
+          <p>{capstone.name}</p>
         </div>
       ))}
       {props.resume.educations.map((education) => (
         <div key={education.id}>
-          <p>{education.job_title}</p>
-        </div>
-      ))}
-      {props.resume.experiences.map((experience) => (
-        <div key={experience.id}>
-          <p>{experience.job_title}</p>
+          <p>{education.degree}</p>
         </div>
       ))}
       {props.resume.skills.map((skill) => (
         <div key={skill.id}>
           <p>{skill.job_title}</p>
-        </div>
-      ))}
-      {props.resume.contacts.map((contact) => (
-        <div key={contact.id}>
-          <p>{contact.job_title}</p>
         </div>
       ))}
     </div>
