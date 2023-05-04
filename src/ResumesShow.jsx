@@ -2,7 +2,7 @@
 export function ResumesShow(props) {
   console.log(props);
   return (
-    <div>
+    <div id="modal">
       <h1>
         {props.resume.first_name} {props.resume.last_name}
       </h1>
@@ -13,11 +13,28 @@ export function ResumesShow(props) {
         <p><strong>Bio: </strong>{props.resume.short_bio}</p>
         </div>
 
-      {props.resume.experiences.map((experience) => (
-        <div key={experience.id}>
-          <p>{experience.job_title}</p>
-        </div>
-      ))}
+      <div className="experiences">
+        <h2>Experience</h2>
+        {props.resume.experiences.map((experience) => (
+          <div className="container" key={experience.id}>
+            <div className="row">
+              <div className="col">
+                <p>Job Title: {experience.job_title}</p>
+              </div>
+              <div id="dates" className="col">
+                <p>
+                  {experience.start_date} - {experience.end_date}
+                </p>
+              </div>
+              <p id="company">{experience.company_name}</p>
+              <ul id="list">
+                <li>{experience.details}</li>
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+
       {props.resume.capstones.map((capstone) => (
         <div key={capstone.id} className="card">
           <h3>
