@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 export function Skills(props) {
   return (
@@ -6,9 +7,7 @@ export function Skills(props) {
       {props.students.map((student) => (
         <div key={student.id} className="card">
           {student.skills.map((skill) => (
-            <div key={skill.id}>
-              <p>{skill.name}</p>
-            </div>
+            <p>{skill.name}</p>
           ))}
         </div>
       ))}
