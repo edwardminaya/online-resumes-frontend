@@ -8,7 +8,7 @@ export function ExperiencesIndex(props) {
       {props.students.map((student) => (
         <div key={student.id} className="card">
           {student.experiences.map((experience) => (
-            <div>
+            <div key={experience.id}>
               <h3>{experience.job_title}</h3>
               <h3>{experience.company_name}</h3>
               <h4>
