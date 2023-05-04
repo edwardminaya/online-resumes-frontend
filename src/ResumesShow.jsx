@@ -18,8 +18,18 @@ export function ResumesShow(props) {
         </div>
       ))}
       {props.resume.educations.map((education) => (
-        <div key={education.id}>
-          <p>{education.degree}</p>
+        <div key={education.id} className="card">
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item">
+              <h3>{education.university_name}</h3>
+            </li>
+            <li className="list-group-item">
+              <strong>Attended:</strong> {education.start_date} — {education.end_date}
+            </li>
+            <li className="list-group-item">
+              <strong>Description:</strong> {education.details}
+            </li>
+          </ul>
         </div>
       ))}
       {props.resume.skills.map((skill) => (
