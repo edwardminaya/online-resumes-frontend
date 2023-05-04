@@ -39,7 +39,7 @@ export function Content() {
   return (
     <div>
       <ResumesIndex students={students} onShowResume={handleShowResume} />
-      <Skills />
+      <Skills students={students} />
       <Capstone students={students} />
       {/* I updated below from experiences={experiences} to students={students} you should do the same for your page. */}
       <ExperiencesIndex students={students} />
