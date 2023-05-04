@@ -6,7 +6,7 @@ export function Education(props) {
       {props.students.map((student) => (
         <div key={student.id} className="card">
           {student.educations.map((education) => (
-            <div>
+            <div key={education.id}>
               <ul className="list-group list-group-flush">
                 <li>
                   <h3>{education.university_name}</h3>

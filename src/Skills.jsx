@@ -6,7 +6,9 @@ export function Skills(props) {
       {props.students.map((student) => (
         <div key={student.id} className="card">
           {student.skills.map((skill) => (
-            <p>{skill.name}</p>
+            <div key={skill.id}>
+              <p>{skill.name}</p>
+            </div>
           ))}
         </div>
       ))}
