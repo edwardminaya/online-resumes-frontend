@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-key */
+/* eslint-disable react/prop-types */
 export function ExperiencesIndex(props) {
   return (
     <div>
