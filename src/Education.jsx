@@ -3,7 +3,7 @@ export function Education(props) {
   return (
     <div>
       <h2>Education</h2>
-      {props.educations.map((education) => (
+      {/* {props.students.map((student) => (
         <div key={education.id} className="card">
           <ul class="list-group list-group-flush">
             <li>
@@ -17,7 +17,7 @@ export function Education(props) {
             </li>
           </ul>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 }

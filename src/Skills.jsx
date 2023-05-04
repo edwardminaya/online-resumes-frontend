@@ -1,19 +1,16 @@
-export function Skills() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  };
-
+/* eslint-disable react/prop-types */
+export function Skills(props) {
   return (
     <div>
-      <h1>Skills</h1>
-      <form onSubmit={handleSubmit}>
-        {/* hardcoding data for now, needs to link to database though */}
-        <div>Ruby, HTML, JavaScript, React, CSS</div>
-        <div>
-          <input type="text" placeholder="Add New Skill"></input>
+      <h2>Skills</h2>
+      {props.students.map((student) => (
+        <div key={student.id} className="card">
+          <li>
+            <h2>{student.skills.name}</h2>
+          </li>
         </div>
-        <button type="submit">Add Skill</button>
-      </form>
+      ))}
+      ;
     </div>
   );
 }
