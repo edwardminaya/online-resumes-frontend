@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-key */
+/* eslint-disable react/prop-types */
 export function ExperiencesIndex(props) {
   return (
     <div>
@@ -13,6 +14,7 @@ export function ExperiencesIndex(props) {
               <h4>
                 {experience.start_date} - {experience.end_date}
               </h4>
+              <div></div>
               <p>{experience.details}</p>
             </div>
           ))}
