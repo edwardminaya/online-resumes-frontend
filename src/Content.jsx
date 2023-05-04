@@ -39,12 +39,12 @@ export function Content() {
   return (
     <div>
       <ResumesIndex students={students} onShowResume={handleShowResume} />
-      <Skills students={students} />
-      <Capstone students={students} />
+      {/* <Skills students={students} /> */}
+      {/* <Capstone students={students} /> */}
       {/* I updated below from experiences={experiences} to students={students} you should do the same for your page. */}
-      <ExperiencesIndex students={students} />
-      <Contact students={students} />
-      <Education students={students} />
+      {/* <ExperiencesIndex students={students} />
+      <Contact students={students} /> */}
+      {/* <Education students={students} /> */}
 
       <Modal show={isResumesShowVisible} onClose={handleClose}>
         <ResumesShow resume={currentResume} />
