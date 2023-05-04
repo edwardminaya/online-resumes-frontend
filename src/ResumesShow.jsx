@@ -24,7 +24,7 @@ export function ResumesShow(props) {
       ))}
       {props.resume.skills.map((skill) => (
         <div key={skill.id}>
-          <p>{skill.job_title}</p>
+          <p>{skill.name}</p>
         </div>
       ))}
     </div>
