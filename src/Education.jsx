@@ -3,17 +3,17 @@ export function Education(props) {
   return (
     <div>
       <h2>Education</h2>
-      {props.educations.map((education) => (
-        <div key={education.id} className="card">
+      {props.students.map((student) => (
+        <div key={student.id} className="card">
           <ul class="list-group list-group-flush">
             <li>
-              <h3>{education.university_name}</h3>
+              <h3>{student.university_name}</h3>
             </li>
             <li className="list-group-item">
-              <strong>Attended:</strong> {education.start_date} — {education.end_date}
+              <strong>Attended:</strong> {student.start_date} — {student.end_date}
             </li>
             <li className="list-group-item">
-              <strong>Description:</strong> {education.details}
+              <strong>Description:</strong> {student.details}
             </li>
           </ul>
         </div>
