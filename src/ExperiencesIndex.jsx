@@ -1,19 +1,23 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-key */
+/* eslint-disable react/prop-types */
 export function ExperiencesIndex(props) {
   return (
     <div>
       <h2>Experience</h2>
-      {props.experiences.map((experience) => (
-        <div key={experience.id} className="card">
-          <ul className="list-group list-group-flush">
-            <li>
+      {props.students.map((student) => (
+        <div key={student.id} className="card">
+          {student.experiences.map((experience) => (
+            <div key={experience.id}>
               <h3>{experience.job_title}</h3>
-            </li>
-            <li className="list-group-item">Company: {experience.company_name}</li>
-            <li className="list-group-item">
-              Start Date: {experience.start_date} - End Date: {experience.end_date}
-            </li>
-            <li className="list-group-item">{experience.details}</li>
-          </ul>
+              <h3>{experience.company_name}</h3>
+              <h4>
+                {experience.start_date} - {experience.end_date}
+              </h4>
+              <div></div>
+              <p>{experience.details}</p>
+            </div>
+          ))}
         </div>
       ))}
     </div>
