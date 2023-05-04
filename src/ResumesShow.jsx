@@ -7,9 +7,11 @@ export function ResumesShow(props) {
         {props.resume.first_name} {props.resume.last_name}
       </h1>
         <img src={props.resume.image_url} />
+        <div className="card">
         <h3>{props.resume.email}</h3>
         <h3>{props.resume.phone_number}</h3>
-        <p>{props.resume.short_bio}</p>
+        <p><strong>Bio: </strong>{props.resume.short_bio}</p>
+        </div>
 
       {props.resume.experiences.map((experience) => (
         <div key={experience.id}>
