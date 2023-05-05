@@ -8,7 +8,7 @@ export function ResumesIndex(props) {
         <div key={student.id} className="card">
           <h3>
             <img src={student.image_url} />
-            <a href="#">
+            <a>
               {student.first_name} {student.last_name}
             </a>
           </h3>
