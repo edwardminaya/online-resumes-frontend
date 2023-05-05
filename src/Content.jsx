@@ -33,7 +33,7 @@ export function Content() {
   };
 
   return (
-    <div>
+    <div className="container">
       <ResumesIndex students={students} onShowResume={handleShowResume} />
       <Modal show={isResumesShowVisible} onClose={handleClose}>
         <ResumesShow resume={currentResume} />
