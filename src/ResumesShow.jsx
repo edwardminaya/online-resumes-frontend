@@ -6,12 +6,15 @@ export function ResumesShow(props) {
       <h1>
         {props.resume.first_name} {props.resume.last_name}
       </h1>
-        <img src={props.resume.image_url} />
-        <div className="card">
+      <img src={props.resume.image_url} />
+      <div className="card">
         <h3>{props.resume.email}</h3>
         <h3>{props.resume.phone_number}</h3>
-        <p><strong>Bio: </strong>{props.resume.short_bio}</p>
-        </div>
+        <p>
+          <strong>Bio: </strong>
+          {props.resume.short_bio}
+        </p>
+      </div>
 
       <div className="experiences">
         <h2>Experience</h2>
@@ -61,11 +64,19 @@ export function ResumesShow(props) {
           </ul>
         </div>
       ))}
-      {props.resume.skills.map((skill) => (
-        <div key={skill.id}>
-          <p>{skill.name}</p>
-        </div>
-      ))}
+
+      <div className="card">
+        <ul className="list-group list-group-flush">
+          <li className="list-group-item">
+            <h3>Skills</h3>
+          </li>
+          {props.resume.skills.map((skill) => (
+            <li key={skill.id} className="list-group-item">
+              <strong>{skill.name}</strong>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
