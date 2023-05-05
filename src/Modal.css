@@ -13,7 +13,7 @@
   position:fixed;
   background: wheat;
   width: 80%;
-  height: auto;
+  height: 100%;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
@@ -27,4 +27,36 @@
   position: absolute;
   top: 0em; 
   right: 0.2em;
+}
+
+.experiences {
+  border: solid;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+#dates {
+  text-align: right;
+}
+
+#company {
+  color: rgb(69, 69, 189);
+  font-weight: bold;
+}
+
+p {
+  margin: 1px;
+}
+
+#list {
+  padding-left: 50px;
+}
+
+#modal {
+  height:100%;
+  overflow:scroll;
+  overflow-x:hidden;
 }
