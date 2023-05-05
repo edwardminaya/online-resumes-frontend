@@ -9,9 +9,13 @@
   z-index: 1000;
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+}
+
 .modal-main {
   position:fixed;
-  background: white;
+  background: wheat;
   width: 80%;
   height: 100%;
   top:50%;
@@ -59,4 +63,8 @@ p {
   height:100%;
   overflow:scroll;
   overflow-x:hidden;
+}
+
+#modalClose {
+  font-size: x-large;
 }
